@@ -14,7 +14,11 @@
 
   /* todo */
   .todo-container {
-    max-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
   }
   .todo-div {
     margin-bottom: 1rem;
