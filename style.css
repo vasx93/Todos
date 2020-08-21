@@ -45,19 +45,19 @@ form input:focus {
 
 /*?           FORM .todo-button */
 
-.todo-button {
+form button {
   color: var(--main-color);
   background: white;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.todo-button:focus {
+form button:focus {
   outline: none;
   border: none;
 }
 
-.todo-button:hover {
+form button:active {
   background: var(--main-color);
   color: white;
   transform: scale(1.2);
@@ -91,7 +91,7 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.7s ease
+  transition: all 0.8s  
   
 }
 
@@ -112,11 +112,7 @@ i {
   color: var(--main-color);
   cursor: pointer
 }
-.todo-btn:hover {
-  background: var(--main-color);
-  color: white;
-}
 .gone {
-  transform: translateY(7rem) rotateZ(20deg);
+  transform: translateY(10rem) rotateZ(30deg);
   opacity: 0;
 }
