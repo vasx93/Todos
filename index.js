@@ -19,7 +19,7 @@ function toDo(ev) {
   toDoDiv.appendChild(li)
 
   const removeBtn = document.createElement('button')
-  removeBtn.innerHTML = '<i class="delete fas fa-minus-square">'
+  removeBtn.innerHTML = '<i class="fas fa-minus-square">'
   removeBtn.classList.add('todo-btn')
   toDoDiv.appendChild(removeBtn)
   
