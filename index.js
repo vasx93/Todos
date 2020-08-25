@@ -9,24 +9,26 @@ const form = document.querySelector('form')
 function toDo(ev) {
   ev.preventDefault()
 
-  const toDoDiv = document.createElement('div')
-  toDoDiv.classList.add('todo-div')
-
-  const li = document.createElement('li')
-  li.innerHTML = `
-   <input type="text" value="${mainInput.value}">`
-  li.classList.add('todo-item')
-  toDoDiv.appendChild(li)
-
-  const removeBtn = document.createElement('button')
-  removeBtn.innerHTML = '<i class="fas fa-minus-square">'
-  removeBtn.classList.add('todo-btn')
-  toDoDiv.appendChild(removeBtn)
+  if (!mainInput.value) {
+    return
+  } else {
+    const toDoDiv = document.createElement('div')
+    toDoDiv.classList.add('todo-div')
   
-  ul.append(toDoDiv)
+    const li = document.createElement('li')
+    li.innerHTML = `
+     <input type="text" value="${mainInput.value}">`
+    li.classList.add('todo-item')
+    toDoDiv.appendChild(li)
+  
+    const removeBtn = document.createElement('button')
+    removeBtn.innerHTML = '<i class="fas fa-minus-square">'
+    removeBtn.classList.add('todo-btn')
+    toDoDiv.appendChild(removeBtn)
+    
+    ul.append(toDoDiv)
+  }
   mainInput.value = ''
-
-  
 }
 
 
