@@ -1,119 +1,119 @@
 * {
-  padding:0;
-  margin: 0;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 :root {
-  --main-color: #5C258D;
-  --secondary-color: #4389A2
+	--main-color: #5c258d;
+	--secondary-color: #4389a2;
 }
 
 body {
-  background-image: linear-gradient(
-    to right,
-    var(--main-color),
-    var(--secondary-color));
-  color: white;
-  font-family: 'Alata', sans-serif;
-  min-height: 100vh;
-  overflow: hidden;
+	background-image: linear-gradient(
+		to right,
+		var(--main-color),
+		var(--secondary-color)
+	);
+	color: white;
+	font-family: 'Alata', sans-serif;
+	min-height: 100vh;
+	overflow: auto;
 }
 
 header {
-  font-size: 1.5rem;
+	font-size: 1.5rem;
 }
 /* HEADER AND FORM  */
 
-header, form {
-  min-height: 20vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+header,
+form {
+	min-height: 20vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 /* form  text field and click button general settings */
 
-form input, form button {
-  padding: 1rem;
-  font-size: 2rem;
-  border: none;
-  background: white;
+form input,
+form button {
+	padding: 1rem;
+	font-size: 2rem;
+	border: none;
+	background: white;
 }
 form input:focus {
-  border: none;
-  outline: none;
+	border: none;
+	outline: none;
 }
 
 /*?           FORM .todo-button */
 
 form button {
-  color: var(--main-color);
-  background: white;
-  cursor: pointer;
-  transition: all 0.3s ease;
+	color: var(--main-color);
+	background: white;
+	cursor: pointer;
+	transition: all 0.3s ease;
 }
 
 form button:focus {
-  outline: none;
-  border: none;
+	outline: none;
+	border: none;
 }
 
 form button:active {
-  background: var(--main-color);
-  color: white;
-  transform: scale(1.2);
+	background: var(--main-color);
+	color: white;
+	transform: scale(1.2);
 }
 
 /*?  todo container and UL             */
 
 .todo-container {
-  
-  padding: 0.2rem;
-  min-height: 20vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	padding: 0.2rem;
+	min-height: 20vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .todo-list {
-  list-style: none;
-  min-width: 30%;
+	list-style: none;
+	min-width: 30%;
 }
 i {
-  pointer-events: none;
+	pointer-events: none;
 }
 
 /*?        todo item input and btn  */
 
 .todo-div {
-  background: white;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.8s  
-  
+	background: white;
+	margin-bottom: 1rem;
+	padding: 0.5rem;
+	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.8s;
 }
 
-.todo-item input, .todo-btn {
-  margin: 0.5rem;
-  padding: 0.5rem;
-  font-size: 1.5rem;
-  border: none;
-  
+.todo-item input,
+.todo-btn {
+	margin: 0.5rem;
+	padding: 0.5rem;
+	font-size: 1.5rem;
+	border: none;
 }
 .todo-item input:focus,
 .todo-btn:focus {
-  border: none;
-  outline: none;
+	border: none;
+	outline: none;
 }
 
 .todo-btn {
-  color: var(--main-color);
-  cursor: pointer
+	color: var(--main-color);
+	cursor: pointer;
 }
 .gone {
-  transform: translateY(10rem) rotateZ(30deg);
-  opacity: 0;
+	transform: translateY(10rem) rotateZ(30deg);
+	opacity: 0;
 }
